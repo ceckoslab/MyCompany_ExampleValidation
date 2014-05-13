@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <example_validation translate="label" module="example_validation">
+            <label>MyCompany ExampleValidation</label>
+            <tab>general</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>7990</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <multiple_quantity translate="label">
+                    <label>Qultiple Quantity Settings</label>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <multiple_qty_number translate="label">
+                            <label>Minimum qty count</label>
+                            <frontend_type>text</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>20</sort_order>
+                        </multiple_qty_number>
+                        <multiple_qty_quote_item_error_message translate="label">
+                            <label>Minimum qty - Item message</label>
+                            <frontend_type>text</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>30</sort_order>
+                        </multiple_qty_quote_item_error_message>
+                        <multiple_qty_quote_error_message translate="label">
+                            <label>Minimum qty - Cart message</label>
+                            <frontend_type>text</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>40</sort_order>
+                        </multiple_qty_quote_error_message>
+                    </fields>
+                </multiple_quantity>
+            </groups>
+        </example_validation>
+    </sections>
+</config>

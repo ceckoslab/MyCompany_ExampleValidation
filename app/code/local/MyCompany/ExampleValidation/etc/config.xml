@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author      Tsvetan Stoychev <tsvetan.stoychev@jarlssen.de>
+ * @website     http://www.jarlssen.de
+ */
+-->
+<config>
+    <modules>
+        <MyCompany_ExampleValidation>
+            <version>0.0.1</version>
+        </MyCompany_ExampleValidation>
+    </modules>
+
+    <global>
+        <helpers>
+            <example_validation>
+                <class>MyCompany_ExampleValidation_Helper</class>
+            </example_validation>
+        </helpers>
+        <models>
+            <example_validation>
+                <class>MyCompany_ExampleValidation_Model</class>
+            </example_validation>
+        </models>
+
+        <jarlssen_custom_cart_validation>
+            <rules>
+                <multiple_quantity_validation>
+                    <product_type>*</product_type>
+                    <model>example_validation/validator_validateMultipleQty</model>
+                    <origin>example_validation_multiple_qty</origin>
+                    <code>1</code>
+                </multiple_quantity_validation>
+            </rules>
+        </jarlssen_custom_cart_validation>
+    </global>
+
+    <default>
+        <example_validation>
+            <multiple_quantity>
+                <multiple_qty_number>10</multiple_qty_number>
+                <multiple_qty_quote_item_error_message>You can't order products, that don't have multiple quantity of %s</multiple_qty_quote_item_error_message>
+                <multiple_qty_quote_error_message>Not allowed quantity</multiple_qty_quote_error_message>
+            </multiple_quantity>
+        </example_validation>
+    </default>
+</config>
